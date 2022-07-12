@@ -1,10 +1,13 @@
 package dev.waceramercythird.mycontacts
 
+import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
 import dev.waceramercythird.mycontacts.databinding.ContactListItemsBinding
@@ -18,6 +21,7 @@ class ContactsRvAdapter(var contactList: List<Contact>) :
     }
 
     override fun onBindViewHolder(holder: ContactsViewHolder, position: Int) {
+        var context = holder.itemView.context
         var currentContact = contactList.get(position)
         with(holder.binding) {
             tvName.text = currentContact.name
@@ -31,8 +35,24 @@ class ContactsRvAdapter(var contactList: List<Contact>) :
                 .placeholder(R.drawable.ic_baseline_person_24)
                 .error(R.drawable.ic_baseline_error_24)
                 .into(holder.binding.imgContact)
+//            cvContact.setOnClickListener{
+//                var context = holder.itemView.context
+//                var intent = Intent(context, ViewContactActivity::class.java)
+//                context.startActivity(intent)
+//                holder.itemView.context.startActivities()
+            }
+        holder.binding.cvContact.setOnClickListener{
+            var intent = Intent(context, ViewContactActivity::class.java)
+            intent.putExtra("NAME", currentContact.name)
+            intent.putExtra("PHONE_NUMBER",currentContact.number)
+            context.startActivity(intent)
 
 
+        }
+        holder.binding.imgContact.setOnClickListener{
+            Toast
+                .makeText(context, "You have clicked on my face", Toast.LENGTH_LONG)
+                .show()
         }
 
     }
