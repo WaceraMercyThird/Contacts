@@ -6,4 +6,107 @@
     android:layout_height="match_parent"
     tools:context=".ViewContactActivity">
 
+    <ImageView
+        android:id="@+id/imgPerson"
+        android:layout_width="380dp"
+        android:layout_height="257dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_person_24" />
+
+    <TextView
+        android:id="@+id/tvNum2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        tools:text="O738748364"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/tvName2" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgDetail"
+        app:srcCompat="@drawable/ic_baseline_phone_24" />
+
+    <ImageView
+        android:id="@+id/imgWhatApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:srcCompat="@drawable/ic_baseline_chat_bubble_24" />
+
+    <TextView
+        android:id="@+id/tvWhatsUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        tools:text="0735745532"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imgWhatApp"
+        app:layout_constraintTop_toBottomOf="@+id/tvNum2" />
+
+    <ImageView
+        android:id="@+id/imgMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgWhatApp"
+        app:srcCompat="@drawable/ic_baseline_message_24" />
+
+    <TextView
+        android:id="@+id/tvText"
+        android:layout_width="276dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        tools:text="To cover all of its bases, an organization should develop a comprehensive plan that includes not only these five types of cybersecurity, "
+        app:layout_constraintStart_toEndOf="@+id/imgMessage"
+        app:layout_constraintTop_toBottomOf="@+id/tvWhatsUp" />
+
+    <ImageView
+        android:id="@+id/imgDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgPerson"
+        app:srcCompat="@drawable/ic_baseline_person_outline_24" />
+
+    <TextView
+        android:id="@+id/tvName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        tools:text="John Doe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imgDetail"
+        app:layout_constraintTop_toBottomOf="@+id/imgPerson" />
 </androidx.constraintlayout.widget.ConstraintLayout>
