@@ -27,10 +27,9 @@ class ViewContactActivity : AppCompatActivity() {
 
         Toast.makeText(this,name,Toast.LENGTH_LONG).show()
 
-        binding.tvnames.text = name
-        binding.tvAddresst.text = address
-        binding.tvEmail.text = email
-        binding.tvnumbers.text = number
+        binding.tvNum2.text = number
+        binding.tvText.text = email
+        binding.tvWhatsUp.text = address
         Picasso
             .get()
             .load(intent.getStringExtra("IMAGE"))
