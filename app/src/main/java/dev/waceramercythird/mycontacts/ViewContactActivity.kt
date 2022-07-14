@@ -32,8 +32,7 @@ class ViewContactActivity : AppCompatActivity() {
         binding.tvWhatsUp.text = address
         Picasso
             .get()
-            .load(intent.getStringExtra("IMAGE"))
-            .into(image)
+            .load(intent.getStringExtra("IMAGE")).into(image)
 
     }
 }
