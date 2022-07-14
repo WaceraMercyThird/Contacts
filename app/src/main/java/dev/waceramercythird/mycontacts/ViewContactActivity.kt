@@ -30,9 +30,9 @@ class ViewContactActivity : AppCompatActivity() {
         binding.tvNum2.text = number
         binding.tvText.text = email
         binding.tvWhatsUp.text = address
-        Picasso
-            .get()
-            .load(intent.getStringExtra("IMAGE")).into(image)
+        Picasso.get()
+            .load(intent.getStringExtra("IMAGE"))
+//            .into(image)
 
     }
 }
